@@ -79,21 +79,21 @@ void settings_set_defaults(FSettings *settings) {
   settings->rgb_mode = RGB_MODE_NORMAL;
   settings->channel_delay = 1.0f;
   settings->broadcast_speed = 5;
-  strcpy(settings->ap_ssid, "GhostNet");
-  strcpy(settings->ap_password, "GhostNet");
+  strcpy(settings->ap_ssid, "ESP");
+  strcpy(settings->ap_password, "ESP");
   settings->rgb_speed = 15;
 
   // Evil Portal defaults
   strcpy(settings->portal_url, "/default/path");
-  strcpy(settings->portal_ssid, "EvilPortal");
-  strcpy(settings->portal_password, "EvilPortalPass");
-  strcpy(settings->portal_ap_ssid, "EvilAP");
+  strcpy(settings->portal_ssid, "Desktop");
+  strcpy(settings->portal_password, "password");
+  strcpy(settings->portal_ap_ssid, "FreeWaiFai");
   strcpy(settings->portal_domain, "portal.local");
   settings->portal_offline_mode = false;
 
   // Power Printer defaults
   strcpy(settings->printer_ip, "192.168.1.100");
-  strcpy(settings->printer_text, "Default Text");
+  strcpy(settings->printer_text, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet ultricies quam. Sed quis mauris nec orci consequat porttitor. Proin a fermentum libero, et vestibulum lorem. Etiam non gravida turpis. Etiam mattis rhoncus tellus dignissim viverra. Morbi in augue odio. Quisque eget faucibus elit, quis porta nulla. Donec odio est, efficitur id lobortis scelerisque, vehicula id felis.");
   settings->printer_font_size = 12;
   settings->printer_alignment = ALIGNMENT_CM;
   strcpy(settings->flappy_ghost_name, "Bob");
