@@ -965,7 +965,9 @@ const char *pick_random_yt_video() {
       "dQw4w9WgXcQ", // Video 1
       "qWNQUvIk954", // Video 2
       "ZZujisNZuw0", // Video 3
-      "rfXJ6xM1JnE"  // Video 4
+      "Nh7N2F-9ZbY"  // Video 4
+      "Nh7N2F-9ZbY"  // Video 4
+      "OvkOOxklAKE"  // Video 5
   };
 
   int num_videos = sizeof(yt_urls) / sizeof(yt_urls[0]);
