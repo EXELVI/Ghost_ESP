@@ -18,22 +18,17 @@
 
 static const char *SD_TAG = "SD_Card_Manager";
 
-sd_card_manager_t sd_card_manager = { // Change this based on board config
+sd_card_manager_t sd_card_manager = {
     .card = NULL,
     .is_initialized = false,
-    .clkpin = 19,
-    .cmdpin = 18,
-    .d0pin = 20,
-    .d1pin = 21,
-    .d2pin = 22,
-    .d3pin = 23,
 #ifdef CONFIG_USING_SPI
-    .spi_cs_pin = CONFIG_SD_SPI_CS_PIN,
-    .spi_clk_pin = CONFIG_SD_SPI_CLK_PIN,
-    .spi_miso_pin = CONFIG_SD_SPI_MISO_PIN,
-    .spi_mosi_pin = CONFIG_SD_SPI_MOSI_PIN
+    .spi_cs_pin = 7,   // GPIO07 (SS)
+    .spi_clk_pin = 4,  // GPIO04 (A4, SCK)
+    .spi_miso_pin = 5, // GPIO05 (MISO)
+    .spi_mosi_pin = 6  // GPIO06 (MOSI)
 #endif
 };
+
 
 static void get_next_pcap_file_name(char *file_name_buffer,
                                     const char *base_name) {
